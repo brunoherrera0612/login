@@ -9,8 +9,35 @@
 </head>
 <body>
     <div class="wrapper">
+        <span class="bg-animate"></span>
+        <span class="bg-animate2"></span>
         <div class="form-box login">
-            <h2>Login</h2>
+            <h2 class="animation" style="--i:0;">INGRESAR</h2>
+            <form action="#">
+                <div class="input-box animation" style="--i:1;">
+                    <input type="text" required>
+                    <label>Usuario</label>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box animation" style="--i:2;">
+                    <input type="password" required>
+                    <label>Contraseña</label>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <button type="submit" class="btn animation" style="--i:3;">Ingresar
+                </button>
+                <div class="logreg-link animation" style="--i:4;">
+                    <p>¿No tienes una cuenta? <a href="#" class="register-link">Registrarse</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="info-text login">
+            <h2>Bienvenido de vuelta!</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+        </div>
+
+        <div class="form-box register">
+            <h2>REGISTRARSE</h2>
             <form action="#">
                 <div class="input-box">
                     <input type="text" required>
@@ -18,17 +45,29 @@
                     <i class='bx bxs-user'></i>
                 </div>
                 <div class="input-box">
+                    <input type="text" required>
+                    <label>Correo</label>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+                <div class="input-box">
                     <input type="password" required>
                     <label>Contraseña</label>
                     <i class='bx bxs-lock-alt'></i>
                 </div>
-                <button type="submit" class="btn">Ingresar
+                <button type="submit" class="btn">Registrarse
                 </button>
                 <div class="logreg-link">
-                    <p>¿No tienes una cuenta? <a href="#" class="register-link">Registrarse</a></p>
+                    <p>¿Ya tienes una cuenta? <a href="#" class="login-link">Ingresar</a></p>
                 </div>
             </form>
         </div>
+
+        <div class="info-text register">
+            <h2>Bienvenido de vuelta!</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+        </div>
     </div>    
+
+    <script src="script.js"></script>
 </body>
 </html>
